@@ -4,10 +4,9 @@ import starterPalettes from "../starterPalettes";
 import { generatePalette } from "../colorHelpers";
 
 function App() {
-  console.log(generatePalette(starterPalettes[0]));
   return (
     <div>
-      <Palette {...starterPalettes[4]} />
+      <Palette palette={generatePalette(starterPalettes[4])} />
     </div>
   );
 }

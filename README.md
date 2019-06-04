@@ -23,3 +23,4 @@ npm init
 
 - [react-copy-to-clipboard](https://www.npmjs.com/package/react-copy-to-clipboard)
 - [chroma.js](https://vis4.net/chromajs/)
+- [rc-slider](https://www.npmjs.com/package/rc-slider)
