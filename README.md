@@ -18,6 +18,7 @@ npm init
 
 - React
 - React-Router
+- Material-UI
 
 ### Libraries used
 
