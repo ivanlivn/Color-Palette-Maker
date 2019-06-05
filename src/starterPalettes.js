@@ -53,9 +53,9 @@ export default [
     ]
   },
   {
-    paletteName: "Flat UI Colors Dutch",
-    id: "flat-ui-colors-dutch",
-    emoji: "🇳🇱",
+    paletteName: "Flat UI Colors V2",
+    id: "flat-ui-colors-v2",
+    emoji: "🤝",
     colors: [
       { name: "Sunflower", color: "#FFC312" },
       { name: "Energos", color: "#C4E538" },
@@ -80,9 +80,9 @@ export default [
     ]
   },
   {
-    paletteName: "Flat UI Colors American",
-    id: "flat-ui-colors-american",
-    emoji: "🇺🇸",
+    paletteName: "Flat UI Colors V3",
+    id: "flat-ui-colors-v3",
+    emoji: "🍞",
     colors: [
       { name: "LightGreenishBlue", color: "#55efc4" },
       { name: "FadedPoster", color: "#81ecec" },
@@ -107,9 +107,9 @@ export default [
     ]
   },
   {
-    paletteName: "Flat UI Colors Aussie",
-    id: "flat-ui-colors-aussie",
-    emoji: "🇦🇺",
+    paletteName: "Flat UI Colors V4",
+    id: "flat-ui-colors-v4",
+    emoji: "🍋",
     colors: [
       { name: "Beekeeper", color: "#f6e58d" },
       { name: "SpicedNectarine", color: "#ffbe76" },
@@ -134,9 +134,9 @@ export default [
     ]
   },
   {
-    paletteName: "Flat UI Colors British",
-    id: "flat-ui-colors-british",
-    emoji: "🇬🇧",
+    paletteName: "Flat UI Colors V5",
+    id: "flat-ui-colors-v5",
+    emoji: "🦋",
     colors: [
       { name: "ProtossPylon", color: "#00a8ff" },
       { name: "Periwinkle", color: "#9c88ff" },
@@ -161,9 +161,9 @@ export default [
     ]
   },
   {
-    paletteName: "Flat UI Colors Spanish",
-    id: "flat-ui-colors-spanish",
-    emoji: "🇪🇸",
+    paletteName: "Flat UI Colors V6",
+    id: "flat-ui-colors-v6",
+    emoji: "🙊",
     colors: [
       { name: "JacksonsPurple", color: "#40407a" },
       { name: "C64Purple", color: "#706fd3" },
@@ -188,9 +188,9 @@ export default [
     ]
   },
   {
-    paletteName: "Flat UI Colors Indian",
-    id: "flat-ui-colors-indian",
-    emoji: "🇮🇳",
+    paletteName: "Flat UI Colors V7",
+    id: "flat-ui-colors-v7",
+    emoji: "🦁",
     colors: [
       { name: "OrchidOrange", color: "#FEA47F" },
       { name: "SpiroDiscoBall", color: "#25CCF7" },
@@ -215,9 +215,9 @@ export default [
     ]
   },
   {
-    paletteName: "Flat UI Colors French",
-    id: "flat-ui-colors-french",
-    emoji: "🇫🇷",
+    paletteName: "Flat UI Colors V8",
+    id: "flat-ui-colors-v8",
+    emoji: "🎅",
     colors: [
       { name: "FlatFlesh", color: "#fad390" },
       { name: "MelonMelody", color: "#f8c291" },
