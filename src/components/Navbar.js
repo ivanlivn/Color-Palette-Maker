@@ -29,18 +29,21 @@ class Navbar extends Component {
         <div className="logo">
           <Link to="/">ColorPaletteMaker</Link>
         </div>
-        <div className="slider-container">
-          <span>Level: {level}</span>
-          <div className="Slider">
-            <Slider
-              defaultValue={level}
-              min={100}
-              max={900}
-              step={100}
-              onAfterChange={changeLevel}
-            />
+        {/* Only show slider when not on single color palette */}
+        {this.props.showingAllColors && (
+          <div className="slider-container">
+            <span>Level: {level}</span>
+            <div className="Slider">
+              <Slider
+                defaultValue={level}
+                min={100}
+                max={900}
+                step={100}
+                onAfterChange={changeLevel}
+              />
+            </div>
           </div>
-        </div>
+        )}
         <div className="select-container">
           <Select value={format} onChange={this.handleFormatChange}>
             <MenuItem value="hex">HEX - #ffffff</MenuItem>
