@@ -30,3 +30,8 @@ npm init
 - [React Material-UI Form Validator](https://www.npmjs.com/package/react-material-ui-form-validator)
 - [React Sortable HOC](https://github.com/clauderic/react-sortable-hoc)
 - [emoji-mart](https://missive.github.io/emoji-mart/)
+
+## Planned
+
+- Save palette list based on ID
+- Authentication with firebase
