@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import chroma from "chroma-js";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import "../styles/ColorBox.css";
 
@@ -16,6 +17,9 @@ class ColorBox extends Component {
   render() {
     const { name, background, paletteId, id, showMoreLink } = this.props;
     const { isCopied } = this.state;
+    // Grab luminosity of color to dynamically change color of text for readability
+    const isDark = chroma(background).luminance() <= 0.08;
+    const isLight = chroma(background).luminance() >= 0.7;
     return (
       <CopyToClipboard text={background} onCopy={this.changeCopyState}>
         <div style={{ background }} className="ColorBox">
@@ -26,13 +30,15 @@ class ColorBox extends Component {
           />
           <div className={`copy-msg ${isCopied && "show"}`}>
             <h1>Copied!</h1>
-            <p>{this.props.background}</p>
+            <p className={isLight && "dark-text"}>{this.props.background}</p>
           </div>
           <div className="copy-container">
             <div className="box-content">
-              <span>{name}</span>
+              <span className={isDark && "light-text"}>{name}</span>
             </div>
-            <button className="copy-button">Copy</button>
+            <button className={`copy-button ${isLight && "dark-text"}`}>
+              Copy
+            </button>
           </div>
           {/* Only show the "MORE" button on regular palette component */}
           {showMoreLink && (
@@ -40,7 +46,7 @@ class ColorBox extends Component {
               to={`/palette/${paletteId}/${id}`}
               onClick={event => event.stopPropagation()}
             >
-              <span className="see-more">More</span>
+              <span className={`see-more ${isLight && "dark-text"}`}>MORE</span>
             </Link>
           )}
         </div>
