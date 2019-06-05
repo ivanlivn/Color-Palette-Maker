@@ -20,10 +20,9 @@ class MiniPalette extends Component {
     ));
     return (
       <div className={classes.root} onClick={handleClick}>
-        <div className={classes.delete}>
+        <div>
           <DeleteIcon
             className={classes.deleteIcon}
-            style={{ transition: "all 0.3s ease-in-out" }}
             onClick={this.deletePalette}
           />
         </div>
