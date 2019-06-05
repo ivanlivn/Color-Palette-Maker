@@ -8,9 +8,11 @@ import starterPalettes from "../starterPalettes";
 import { generatePalette } from "../colorHelpers";
 
 class App extends Component {
-  state = {
-    palettes: starterPalettes
-  };
+  constructor(props) {
+    super(props);
+    const savedPalettes = JSON.parse(window.localStorage.getItem("palettes"));
+    this.state = { palettes: savedPalettes || starterPalettes };
+  }
 
   // Returns the entire palette object matching passed id
   findPalette = id => {
@@ -19,7 +21,17 @@ class App extends Component {
     });
   };
   savePalette = newPalette => {
-    this.setState({ palettes: [...this.state.palettes, newPalette] });
+    this.setState(
+      { palettes: [...this.state.palettes, newPalette] },
+      this.syncLocalStorage
+    );
+  };
+  // Save palettes to local storage
+  syncLocalStorage = () => {
+    window.localStorage.setItem(
+      "palettes",
+      JSON.stringify(this.state.palettes)
+    );
   };
   render() {
     return (
