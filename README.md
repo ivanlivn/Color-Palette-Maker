@@ -26,3 +26,5 @@ npm init
 - [react-copy-to-clipboard](https://www.npmjs.com/package/react-copy-to-clipboard)
 - [chroma.js](https://vis4.net/chromajs/)
 - [rc-slider](https://www.npmjs.com/package/rc-slider)
+- [React Color](https://casesandberg.github.io/react-color/)
+- [react-material-ui-form-validator](https://www.npmjs.com/package/react-material-ui-form-validator)
