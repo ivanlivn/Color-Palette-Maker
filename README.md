@@ -29,3 +29,4 @@ npm init
 - [React Color](https://casesandberg.github.io/react-color/)
 - [React Material-UI Form Validator](https://www.npmjs.com/package/react-material-ui-form-validator)
 - [React Sortable HOC](https://github.com/clauderic/react-sortable-hoc)
+- [emoji-mart](https://missive.github.io/emoji-mart/)
