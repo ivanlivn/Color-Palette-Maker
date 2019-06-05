@@ -26,7 +26,8 @@ const styles = theme => ({
     transition: theme.transitions.create(["margin", "width"], {
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.leavingScreen
-    })
+    }),
+    backgroundColor: "#ff8683"
   },
   appBarShift: {
     width: `calc(100% - ${drawerWidth}px)`,
@@ -119,6 +120,17 @@ class NewPaletteForm extends Component {
     this.setState({ newName: event.target.value });
   };
 
+  handleSubmit = () => {
+    let newName = "New Test Palette";
+    const newPalette = {
+      paletteName: newName,
+      id: newName.toLowerCase().replace(/ /g, "-"),
+      colors: this.state.colors
+    };
+    this.props.savePalette(newPalette);
+    this.props.history.push("/");
+  };
+
   render() {
     const { classes, theme } = this.props;
     const { open } = this.state;
@@ -128,11 +140,12 @@ class NewPaletteForm extends Component {
         <CssBaseline />
         <AppBar
           position="fixed"
+          // color="default"
           className={classNames(classes.appBar, {
             [classes.appBarShift]: open
           })}
         >
-          <Toolbar disableGutters={!open}>
+          <Toolbar color="inherit" disableGutters={!open}>
             <IconButton
               color="inherit"
               aria-label="Open drawer"
@@ -144,6 +157,13 @@ class NewPaletteForm extends Component {
             <Typography variant="h6" color="inherit" noWrap>
               Persistent drawer
             </Typography>
+            <Button
+              variant="contained"
+              color="primary"
+              onClick={this.handleSubmit}
+            >
+              Save Palette
+            </Button>
           </Toolbar>
         </AppBar>
         <Drawer
