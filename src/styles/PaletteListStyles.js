@@ -1,6 +1,6 @@
 export default {
   root: {
-    backgroundColor: "pink",
+    backgroundColor: "#ff8683",
     height: "100vh",
     display: "flex",
     alignItems: "flex-start",
@@ -17,7 +17,18 @@ export default {
     display: "flex",
     width: "100%",
     justifyContent: "space-between",
-    color: "white"
+    color: "white",
+    alignItems: "center",
+    "& a": {
+      color: "white",
+      fontFamily: "Roboto",
+      fontSize: "1rem"
+    },
+    "& a:hover": {
+      backgroundColor: "white",
+      color: "#ff8683",
+      textDecoration: "none"
+    }
   },
   palettes: {
     boxSizing: "border-box",

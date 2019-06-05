@@ -1,5 +1,3 @@
-import { Z_DEFAULT_COMPRESSION } from "zlib";
-
 export default {
   Palette: {
     height: "100vh",
